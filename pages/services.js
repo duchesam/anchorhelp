@@ -1,0 +1,3 @@
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+export default function Services(){ return (<div><Header /><main className='container narrow'><h1>Nationwide Services</h1><div className="grid-2"><div className="card"><h3>Auction & Foreclosure Guidance</h3><p>Clear explanations of your options and timelines.</p></div><div className="card"><h3>Fast Cash Offers</h3><p>Transparent offers with no commissions.</p></div><div className="card"><h3>Document Review</h3><p>We review payoff and reinstatement letters from any U.S. lender.</p></div><div className="card"><h3>Buyback Program</h3><p>Stay in your home while you work toward repurchase (requires stable income).</p></div></div></main><Footer /></div>) }

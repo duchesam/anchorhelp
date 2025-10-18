@@ -1,0 +1,3 @@
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+export default function Properties(){ return (<div><Header /><main className='container narrow'><h1>Case Studies</h1><div className="grid-2"><div className="card"><h3>California</h3><p>Homeowner avoided foreclosure with a 70% cash offer and walked away with $15,000.</p></div><div className="card"><h3>Texas</h3><p>Owner used buyback to remain in the home while regaining stability.</p></div></div></main><Footer /></div>) }
