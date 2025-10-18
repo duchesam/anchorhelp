@@ -1,0 +1,2 @@
+import Link from 'next/link'
+export default function Header(){ return (<header className="site-header glass"><div className="container nav-row"><div className="brand"><Link href='/'>Anchor <span>Help</span></Link></div><nav className="nav"><Link href='/'>Home</Link><Link href='/about'>About</Link><Link href='/options'>Options</Link><Link href='/services'>Services</Link><Link href='/properties'>Case Studies</Link><Link href='/faq'>FAQ</Link><Link href='/contact'>Contact</Link></nav><a className="btn btn-primary sm-hide" href="/contact">Get Help Now</a></div></header>) }
