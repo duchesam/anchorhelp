@@ -1,29 +1,31 @@
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-export default function Home(){
-  return (<>
-    <Header/>
-    <section className="hero">
-      <div className="wrap">
-        <h1>Nationwide Foreclosure Help</h1>
-        <p className="small">Real options when you need them most. We help homeowners across the U.S. avoid foreclosure, stop auctions, and move forward.</p>
-        <div style={{display:'flex',gap:'12px',marginTop:'14px'}}>
-          <a href="/contact" className="btn primary">Get a Cash Offer</a>
-          <a href="/options" className="btn">Explore Options</a>
-        </div>
-        <div className="kpis">
-          <div className="pill">Fast decisions</div>
-          <div className="pill">No commissions</div>
-          <div className="pill">Nationwide network</div>
-          <div className="pill">Transparent process</div>
-        </div>
-        <div className="grid">
-          <div className="card"><strong>2-Year Buyback.</strong><br/>Stay in your home while working toward future ownership. Requires consistent proof of income.</div>
-          <div className="card"><strong>70% Cash Offer.</strong><br/>Close quickly; we handle liens and avoid last-minute stalls.</div>
-          <div className="card"><strong>Auction Rescue.</strong><br/>We can still help even if a sale date is scheduled—time matters.</div>
-        </div>
-      </div>
-    </section>
-    <Footer/>
-  </>);
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Link from "next/link";
+
+export default function Home() {
+  return (
+    <>
+      <Header />
+      <main className="container">
+        <section className="hero">
+          <h1>Nationwide Foreclosure Help</h1>
+          <p>
+            Real options when you need them most. We help homeowners across the U.S. avoid
+            foreclosure, stop auctions, and move forward—fast and respectfully.
+          </p>
+          <div className="btns">
+            <Link className="btn primary" href="/contact">Get Free Offer</Link>
+            <Link className="btn" href="/options">Explore Options</Link>
+          </div>
+          <div className="grid">
+            <div className="card"><strong>Fast decisions</strong><br/>Urgent timelines respected.</div>
+            <div className="card"><strong>No commissions</strong><br/>Transparent numbers.</div>
+            <div className="card"><strong>Nationwide network</strong><br/>We can help wherever you are.</div>
+            <div className="card"><strong>Respectful process</strong><br/>You stay in control.</div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
 }

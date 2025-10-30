@@ -1,13 +1,8 @@
-# Build
+
 .next/
-out/
-
-# Dependencies
 node_modules/
-
-# Vercel / env / misc
 .vercel/
 .env
 .env.*
 .DS_Store
-npm-debug.log*
+

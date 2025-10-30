@@ -1,21 +1,20 @@
-import Link from 'next/link';
-export default function Header(){
-  const Nav = ({href, children, cls}) => <Link href={href} className={cls||'nav'}>{children}</Link>;
+import Link from "next/link";
+
+export default function Header() {
   return (
-    <header className="site-header">
-      <div className="wrap">
-        <nav>
-          <Link href="/" className="logo">Anchor<span>Help</span></Link>
-          <div className="links">
-            <Nav href="/">Home</Nav>
-            <Nav href="/options">Options</Nav>
-            <Nav href="/services">Services</Nav>
-            <Nav href="/faq">FAQ</Nav>
-            <Nav href="/contact">Contact</Nav>
-            <Nav href="/contact" cls="btn primary">Get Free Offer</Nav>
-          </div>
-        </nav>
-      </div>
+    <header className="container">
+      <nav className="nav">
+        <div className="logo">
+          Anchor <em>Help</em>
+        </div>
+        <div className="links">
+          <Link href="/">Home</Link>
+          <Link href="/options">Options</Link>
+          <Link href="/services">Services</Link>
+          <Link href="/faq">FAQ</Link>
+          <Link href="/contact">Contact</Link>
+        </div>
+      </nav>
     </header>
-  )
+  );
 }
