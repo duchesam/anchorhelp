@@ -1,0 +1,23 @@
+:root{--bg:#0b1220;--panel:#0f172a;--text:#e6eefc;--muted:#b7c7e6;--brand:#3b82f6}
+*{box-sizing:border-box} html,body,#__next{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto}
+.wrap{max-width:1100px;margin:0 auto;padding:24px}
+a{color:#cfe1ff;text-decoration:none} a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.675rem 1rem;border-radius:.6rem;background:#1e293b;border:1px solid #263247}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+.hero{background:radial-gradient(1000px 400px at 40% 0%,#08203a 0%,#0b1220 60%)}
+.hero h1{font-size:clamp(28px,5vw,44px);margin:0 0 8px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:28px 0}
+.kpis .pill{background:#101b31;border:1px solid #1a2742;border-radius:999px;padding:.6rem 1rem;text-align:center;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--panel);border:1px solid #1a2742;border-radius:14px;padding:18px;min-height:120px}
+.small{color:var(--muted);font-size:.95rem}
+.site-header{border-bottom:1px solid #1b2844}
+.site-header nav{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:1.1rem;color:#fff}
+.logo span{color:var(--brand)}
+.links{display:flex;gap:18px;align-items:center}
+.footer{border-top:1px solid #1b2844;margin-top:40px}
+.footerGrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px}
+.badge{display:inline-block;background:#0e1b36;border:1px solid #1a2742;border-radius:999px;padding:.25rem .6rem;margin:.2rem .25rem;color:#bcd1f7;font-size:.85rem}
+@media(max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)} .grid{grid-template-columns:1fr} .footerGrid{grid-template-columns:1fr} .links{gap:12px}}
